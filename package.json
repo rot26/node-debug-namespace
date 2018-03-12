@@ -1,6 +1,6 @@
 {
   "name": "debug-namespace",
-  "version": "0.0.1",
+  "version": "0.0.2-0",
   "description": "Extends popular node debug utility with auto-namespacing based on file path",
   "main": "index.js",
   "scripts": {
