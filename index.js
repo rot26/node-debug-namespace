@@ -1,4 +1,5 @@
-const pkg = require('../package.json')
+const pkg = require('./package.json')
+// const pkgDir = require('pkg-dir');
 const path = require('path')
 const debug = require('debug')
 
@@ -32,12 +33,14 @@ function getPackageName() {
 }
 
 function debugNS(filePath) {
-    debug('debugNS:debugNS')('filePath: %O', filePath)
+    debug('debugNS:debugNS')('input: filePath: %O', filePath)
     return function debugNS1(functionName){
         let ns = pathToNamespace(filePath,functionName)
         debug('debugNS:debugNS:debugNS1')('namespace: %O', ns)
         return debug(ns)
     }
 }
+
+debugNS(__filename)('main')('~test'.repeat(6))
 
 module.exports = debugNS
