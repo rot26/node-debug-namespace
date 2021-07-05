@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/rot26/node-debug-namespace#readme",
   "dependencies": {
-    "debug": "4.1.1"
+    "debug": "4.3.2"
   },
   "devDependencies": {
     "nodemon": "1.19.2"
